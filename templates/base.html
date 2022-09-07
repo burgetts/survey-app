@@ -9,7 +9,7 @@
 <body>
     <h1> {{survey_title}} </h1>
     <p>{% block instructions %}{% endblock %}</p>
-    <form action="/questions/1">
+    <form method="POST" action="/session-setup">
        {% block form_start_button %}{% endblock %}
         </form>
     <form method="POST" action="/answer">
